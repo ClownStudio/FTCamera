@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42014DD4213D26AA002D843C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42014DD3213D26AA002D843C /* AVFoundation.framework */; };
+		42014DD6213D27C0002D843C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42014DD5213D27C0002D843C /* QuartzCore.framework */; };
 		4212AE4B211AE3290030193C /* filters.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4212AE4A211AE3290030193C /* filters.plist */; };
 		4212AE4D211AE3360030193C /* textures.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4212AE4C211AE3360030193C /* textures.plist */; };
 		4212AE5B211C14520030193C /* filter_cover_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4212AE54211C14510030193C /* filter_cover_6.jpg */; };
@@ -97,8 +99,8 @@
 		425F04E92114059F00E3B997 /* EditNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425F04EB2114059F00E3B997 /* EditNavigationBar.xib */; };
 		425F04F0211405E000E3B997 /* EditNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 425F04EF211405E000E3B997 /* EditNavigationBar.m */; };
 		425F04F92117E7DA00E3B997 /* AutoEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 425F04F82117E7DA00E3B997 /* AutoEditorViewController.m */; };
-		42936E6D21A4FC5D00E9442D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42936E6B21A4FC5D00E9442D /* LaunchScreen.storyboard */; };
-		42936E6F21A4FCBD00E9442D /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 42936E6E21A4FCBC00E9442D /* launch.png */; };
+		42936E7221A4FE1A00E9442D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42936E7021A4FE1900E9442D /* LaunchScreen.storyboard */; };
+		42936E7421A4FF5000E9442D /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 42936E7321A4FF4F00E9442D /* launch.png */; };
 		42C0C476210AF43F001B801A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C0C475210AF43F001B801A /* AppDelegate.m */; };
 		42C0C479210AF43F001B801A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C0C478210AF43F001B801A /* ViewController.m */; };
 		42C0C47C210AF43F001B801A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C0C47A210AF43F001B801A /* Main.storyboard */; };
@@ -577,10 +579,11 @@
 		42C0CCBE21100086001B801A /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C0CCC021100086001B801A /* SettingView.xib */; };
 		42C0CCD72111851B001B801A /* SettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C0CCD62111851B001B801A /* SettingModel.m */; };
 		9288CC25F15D42D82D1A0B51 /* libPods-FTCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7929CC7C81A20537918E68 /* libPods-FTCamera.a */; };
-		B6599D1A2369702F00EB4FC2 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6599D192369702F00EB4FC2 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42014DD3213D26AA002D843C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		42014DD5213D27C0002D843C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4212AE4A211AE3290030193C /* filters.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = filters.plist; sourceTree = "<group>"; };
 		4212AE4C211AE3360030193C /* textures.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = textures.plist; sourceTree = "<group>"; };
 		4212AE54211C14510030193C /* filter_cover_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = filter_cover_6.jpg; sourceTree = "<group>"; };
@@ -676,8 +679,8 @@
 		425F04EF211405E000E3B997 /* EditNavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditNavigationBar.m; sourceTree = "<group>"; };
 		425F04F72117E7D900E3B997 /* AutoEditorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoEditorViewController.h; sourceTree = "<group>"; };
 		425F04F82117E7DA00E3B997 /* AutoEditorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoEditorViewController.m; sourceTree = "<group>"; };
-		42936E6C21A4FC5D00E9442D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		42936E6E21A4FCBC00E9442D /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		42936E7121A4FE1A00E9442D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42936E7321A4FF4F00E9442D /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		42B72DE2212FA3F30058B684 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/EditNavigationBar.strings"; sourceTree = "<group>"; };
 		42B72DE5212FA40A0058B684 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SettingView.strings"; sourceTree = "<group>"; };
 		42B72DE6212FA5A50058B684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/EditNavigationBar.xib; sourceTree = "<group>"; };
@@ -1509,8 +1512,6 @@
 		42C0CCD62111851B001B801A /* SettingModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingModel.m; sourceTree = "<group>"; };
 		6A7929CC7C81A20537918E68 /* libPods-FTCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FTCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5917FE5A25B874B13FCBA7 /* Pods-FTCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FTCamera/Pods-FTCamera.debug.xcconfig"; sourceTree = "<group>"; };
-		B6599D1723694B2500EB4FC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B6599D192369702F00EB4FC2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C6DDC78E7C97EF4E4CEA2E79 /* Pods-FTCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-FTCamera/Pods-FTCamera.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1519,8 +1520,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42014DD6213D27C0002D843C /* QuartzCore.framework in Frameworks */,
+				42014DD4213D26AA002D843C /* AVFoundation.framework in Frameworks */,
 				9288CC25F15D42D82D1A0B51 /* libPods-FTCamera.a in Frameworks */,
-				B6599D1A2369702F00EB4FC2 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1646,7 +1648,7 @@
 				42C0C47D210AF440001B801A /* Assets.xcassets */,
 				425F04DF2112F2F400E3B997 /* BasicViewController.h */,
 				425F04E02112F2F400E3B997 /* BasicViewController.m */,
-				42936E6B21A4FC5D00E9442D /* LaunchScreen.storyboard */,
+				42936E7021A4FE1900E9442D /* LaunchScreen.storyboard */,
 				425F04EB2114059F00E3B997 /* EditNavigationBar.xib */,
 				425F04EE211405E000E3B997 /* EditNavigationBar.h */,
 				425F04EF211405E000E3B997 /* EditNavigationBar.m */,
@@ -2297,20 +2299,20 @@
 		42C0CA9A210AFF6D001B801A /* PhotoCollage */ = {
 			isa = PBXGroup;
 			children = (
-				42C0CA9B210AFF6D001B801A /* Resources */,
-				42C0CADD210AFF6D001B801A /* DDPurchase.m */,
+				42C0CB48210AFF6D001B801A /* CollageAssets.xcassets */,
+				42C0CB4C210AFF6D001B801A /* CollageMain.storyboard */,
+				42C0CB4B210AFF6D001B801A /* CollageViewController.h */,
 				42C0CADE210AFF6D001B801A /* CollageViewController.m */,
-				42C0CADF210AFF6D001B801A /* PCViewController.m */,
 				42C0CAE0210AFF6D001B801A /* Controller */,
+				42C0CB4D210AFF6D001B801A /* DDPurchase.h */,
+				42C0CADD210AFF6D001B801A /* DDPurchase.m */,
 				42C0CAEE210AFF6D001B801A /* Libs */,
 				42C0CB36210AFF6D001B801A /* Model */,
-				42C0CB39210AFF6D001B801A /* View */,
-				42C0CB48210AFF6D001B801A /* CollageAssets.xcassets */,
-				42C0CB49210AFF6D001B801A /* Prefix.h */,
 				42C0CB4A210AFF6D001B801A /* PCViewController.h */,
-				42C0CB4B210AFF6D001B801A /* CollageViewController.h */,
-				42C0CB4C210AFF6D001B801A /* CollageMain.storyboard */,
-				42C0CB4D210AFF6D001B801A /* DDPurchase.h */,
+				42C0CADF210AFF6D001B801A /* PCViewController.m */,
+				42C0CB49210AFF6D001B801A /* Prefix.h */,
+				42C0CA9B210AFF6D001B801A /* Resources */,
+				42C0CB39210AFF6D001B801A /* View */,
 			);
 			path = PhotoCollage;
 			sourceTree = "<group>";
@@ -2637,7 +2639,7 @@
 		42C0CBBE210B027D001B801A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				42936E6E21A4FCBC00E9442D /* launch.png */,
+				42936E7321A4FF4F00E9442D /* launch.png */,
 				423469AF2122876B00FD5102 /* pro_asset */,
 				4212AE66211C14710030193C /* iap_ad_1.png */,
 				4212AE67211C14710030193C /* iap_ad_1@2x.png */,
@@ -2831,8 +2833,8 @@
 		EE723A1007258CC7CBE5BB5F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B6599D192369702F00EB4FC2 /* StoreKit.framework */,
-				B6599D1723694B2500EB4FC2 /* Foundation.framework */,
+				42014DD5213D27C0002D843C /* QuartzCore.framework */,
+				42014DD3213D26AA002D843C /* AVFoundation.framework */,
 				6A7929CC7C81A20537918E68 /* libPods-FTCamera.a */,
 			);
 			name = Frameworks;
@@ -2932,7 +2934,7 @@
 				42C0CBF1210B027E001B801A /* Home_2@2x.png in Resources */,
 				42346A902122876C00FD5102 /* halo_2_1.png in Resources */,
 				425F04E92114059F00E3B997 /* EditNavigationBar.xib in Resources */,
-				42936E6D21A4FC5D00E9442D /* LaunchScreen.storyboard in Resources */,
+				42936E7221A4FE1A00E9442D /* LaunchScreen.storyboard in Resources */,
 				42C0CA77210AFEBF001B801A /* waldenMap.png in Resources */,
 				42C0CB57210AFF6D001B801A /* Filter 15.acv in Resources */,
 				42C0CBF2210B027E001B801A /* more@2x.png in Resources */,
@@ -3030,7 +3032,7 @@
 				42C0CB6E210AFF6D001B801A /* A_Marks_8.png in Resources */,
 				42C0CA67210AFEBF001B801A /* vignetteMap.png in Resources */,
 				42C0CBE2210B027E001B801A /* landing_1.jpg in Resources */,
-				42936E6F21A4FCBD00E9442D /* launch.png in Resources */,
+				42936E7421A4FF5000E9442D /* launch.png in Resources */,
 				42346A8A2122876C00FD5102 /* halo_4_1.png in Resources */,
 				42C0CB74210AFF6D001B801A /* style2_5.plist in Resources */,
 				42C0CB91210AFF6D001B801A /* PCTextViewController.xib in Resources */,
@@ -3565,10 +3567,10 @@
 			name = EditNavigationBar.xib;
 			sourceTree = "<group>";
 		};
-		42936E6B21A4FC5D00E9442D /* LaunchScreen.storyboard */ = {
+		42936E7021A4FE1900E9442D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				42936E6C21A4FC5D00E9442D /* Base */,
+				42936E7121A4FE1A00E9442D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -3734,6 +3736,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = D38C434CHM;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FTCamera/Librarys/PhotoCollage/Prefix.h";
 				INFOPLIST_FILE = FTCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3756,6 +3759,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = D38C434CHM;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FTCamera/Librarys/PhotoCollage/Prefix.h";
 				INFOPLIST_FILE = FTCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

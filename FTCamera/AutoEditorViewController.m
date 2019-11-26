@@ -19,12 +19,13 @@
 #import "PhotoXHaloFilter.h"
 #import "FBGlowLabel.h"
 #import "SettingModel.h"
+#import <GoogleMobileAds/GoogleMobileAds.h>
 
 #define Is_iPhoneX ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896)
 #define IS_PAD (UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPad)
 #define IMAGE_WITHNAME(X)   [HCPhotoEditViewController resourceImageWithName:X]
 
-@interface AutoEditorViewController ()
+@interface AutoEditorViewController () <GADBannerViewDelegate>
 
 @end
 
@@ -67,6 +68,7 @@
     GPUImagePicture *_stillImageSource;
     GPUImagePicture *_overImageSource;
     NSDictionary *_selectedFontProperty;
+    GADBannerView *_bannerView;
 }
 
 - (void)viewDidLoad {
@@ -974,13 +976,48 @@ void soundCompleteCallBack(SystemSoundID soundID, void *clientData)
     [self.view addSubview:_alphaView];
     
     SettingView *settingView = [[[NSBundle mainBundle] loadNibNamed:@"SettingView" owner:self options:nil] lastObject];
+    [_alphaView addSubview:settingView];
     if (IS_PAD) {
-        [settingView setFrame:CGRectMake(- self.view.bounds.size.width * 0.4, 0, self.view.bounds.size.width * 0.4, self.view.bounds.size.height)];
+        if ([ProManager isProductPaid:AD_PRODUCT_ID] || [ProManager isFullPaid]){
+            [settingView setFrame:CGRectMake(- self.view.bounds.size.width * 0.4, 0, self.view.bounds.size.width * 0.4, self.view.bounds.size.height)];
+        }else{
+            if(Is_iPhoneX){
+                [settingView setFrame:CGRectMake(- self.view.bounds.size.width * 0.4, 0, self.view.bounds.size.width * 0.4, self.view.bounds.size.height)];
+                _bannerView = [self createAndLoadBannerView];
+                CGRect temp = _bannerView.frame;
+                temp.origin.y = settingView.frame.size.height - 85;
+                _bannerView.frame = temp;
+                [_alphaView addSubview:_bannerView];
+            }else{
+                [settingView setFrame:CGRectMake(- self.view.bounds.size.width * 0.4, 0, self.view.bounds.size.width * 0.4, self.view.bounds.size.height - 90)];
+                _bannerView = [self createAndLoadBannerView];
+                CGRect temp = _bannerView.frame;
+                temp.origin.y = settingView.frame.size.height;
+                _bannerView.frame = temp;
+                [_alphaView addSubview:_bannerView];
+            }
+        }
     }else{
-        [settingView setFrame:CGRectMake(- self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+        if ([ProManager isProductPaid:AD_PRODUCT_ID] || [ProManager isFullPaid]){
+            [settingView setFrame:CGRectMake(- self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+        }else{
+            if(Is_iPhoneX){
+                [settingView setFrame:CGRectMake(- self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+                _bannerView = [self createAndLoadBannerView];
+                CGRect temp = _bannerView.frame;
+                temp.origin.y = settingView.frame.size.height - 85;
+                _bannerView.frame = temp;
+            }else{
+                [settingView setFrame:CGRectMake(- self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.height - 50)];
+                _bannerView = [self createAndLoadBannerView];
+                CGRect temp = _bannerView.frame;
+                temp.origin.y = settingView.frame.size.height;
+                _bannerView.frame = temp;
+            }
+            [_alphaView addSubview:_bannerView];
+        }
     }
     settingView.tag = 1;
-    [_alphaView addSubview:settingView];
     [_alphaView setHidden:NO];
     
     [UIView animateWithDuration:0.3 animations:^{
@@ -995,6 +1032,11 @@ void soundCompleteCallBack(SystemSoundID soundID, void *clientData)
 }
 
 - (void)onCloseSettingView{
+    if (_bannerView) {
+        [_bannerView removeFromSuperview];
+        _bannerView.delegate = nil;
+        _bannerView = nil;
+    }
     [UIView animateWithDuration:0.3 animations:^{
         CGRect temp = [_alphaView viewWithTag:1].frame;
         temp.origin.x = - temp.size.width;
@@ -1002,6 +1044,28 @@ void soundCompleteCallBack(SystemSoundID soundID, void *clientData)
     } completion:^(BOOL finished) {
         [_alphaView removeFromSuperview];
     }];
+}
+
+- (GADBannerView *)createAndLoadBannerView{
+    GADBannerView *bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerPortrait];
+    bannerView.hidden = YES;
+    bannerView.rootViewController = self;
+    [bannerView setAdUnitID:AD_BANNER_ID];
+    bannerView.delegate = self;
+    [bannerView loadRequest:[GADRequest request]];
+    return bannerView;
+}
+
+- (void)adViewDidReceiveAd:(GADBannerView *)bannerView{
+    if ([ProManager isProductPaid:AD_PRODUCT_ID] || [ProManager isFullPaid]) {
+        bannerView.hidden = YES;
+    }else{
+        bannerView.hidden = NO;
+    }
+}
+
+- (void)adView:(GADBannerView *)adView didFailToReceiveAdWithError:(GADRequestError *)error {
+    NSLog(@"adView:didFailToReceiveAdWithError: %@", error.localizedDescription);
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -1019,6 +1083,14 @@ void soundCompleteCallBack(SystemSoundID soundID, void *clientData)
         for (int i = 0; i< [_texturePlistArray count]; i++) {
             EffectCustomButton *button = [_textureScrollView viewWithTag:i+1];;
             [button setLayoutWithContent:[_texturePlistArray objectAtIndex:i]];
+        }
+    }
+    
+    if ([ProManager isProductPaid:AD_PRODUCT_ID] || [ProManager isFullPaid]) {
+        if (_bannerView) {
+            [_bannerView removeFromSuperview];
+            _bannerView.delegate = nil;
+            _bannerView = nil;
         }
     }
 }

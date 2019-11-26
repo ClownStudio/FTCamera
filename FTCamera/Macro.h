@@ -24,4 +24,19 @@
 //边框大小
 #define itemBonderWidth 5
 
+//广告产品id
+#define AD_PRODUCT_ID @"com.appstudio.X2.ad"
+//应⽤程式ID
+#define AD_APP_ID @"ca-app-pub-3553919144267977~7168202255"
+//插⻚广告ID
+#define AD_INTERSTITIAL_ID @"ca-app-pub-3553919144267977/4714279360"
+//横幅广告ID
+#define AD_BANNER_ID @"ca-app-pub-3553919144267977/2279687717"
+
+//广告展示时间间隔（秒）
+#define CameraShowAdTime 20
+
+//是否解锁后才可保存 0为是 1为否
+#define IsSavedWithAD @"1"
+
 #endif /* Macro_h */

@@ -16,13 +16,16 @@
 #import "AutoEditorViewController.h"
 #import "UIImage+Rotate.h"
 #import <StoreKit/StoreKit.h>
+#import <GoogleMobileAds/GoogleMobileAds.h>
 
+#define Is_iPhoneX ([UIScreen mainScreen].bounds.size.height == 812 || [UIScreen mainScreen].bounds.size.height == 896)
 #define IS_PAD (UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPad)
 #define kStoreProductKey [NSString stringWithFormat:@"storeProduct%@",[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]]
 
-@interface ViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate, HXPhotoViewControllerDelegate, AutoEditorViewControllerDelegate,SKProductsRequestDelegate>{
+@interface ViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate, HXPhotoViewControllerDelegate, AutoEditorViewControllerDelegate,SKProductsRequestDelegate,GADBannerViewDelegate>{
     NSInteger _sourceType;
     NSInteger _currentImageIndex;
+    GADBannerView *_bannerView;
 }
 
 @property (strong, nonatomic) UIView *alphaView;
@@ -220,6 +223,58 @@
 #pragma mark HCPhotoEditViewControllerDelegate
 
 -(void)didClickFinishButtonWithEditController:(AutoEditorViewController *)controller newImage:(UIImage *)newImage{
+    if ([ProManager isProductPaid:AD_PRODUCT_ID] == NO && [ProManager isFullPaid] == NO) {
+        if ([SKPaymentQueue canMakePayments]) {
+            if([@"0" isEqualToString:IsSavedWithAD]){
+                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Tip", nil) message:NSLocalizedString(@"ShouldPay", nil) preferredStyle:UIAlertControllerStyleAlert];
+                
+                UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", nil) style:UIAlertActionStyleCancel handler:nil];
+                UIAlertAction *okAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"BuySingle", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    [self.proManager buyProduct:AD_PRODUCT_ID];
+                }];
+                UIAlertAction *allAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"BuyAll", nil) style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+                    [self.proManager buyProduct:ALL_PRODUCT_ID];
+                }];
+                
+                [alertController addAction:okAction];
+                [alertController addAction:allAction];
+                [alertController addAction:cancelAction];
+                
+                [self presentViewController:alertController animated:YES completion:nil];
+            }else{
+                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"Tip", nil) message:NSLocalizedString(@"ShouldPayOrSave", nil) preferredStyle:UIAlertControllerStyleAlert];
+                
+                UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Cancel", nil) style:UIAlertActionStyleCancel handler:nil];
+                UIAlertAction *okAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"BuyAD", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    [self.proManager buyProduct:AD_PRODUCT_ID];
+                }];
+                UIAlertAction *allAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"BuyAll", nil) style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+                    [self.proManager buyProduct:ALL_PRODUCT_ID];
+                }];
+                UIAlertAction *saveAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"Save", nil) style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    [self finishEditController:controller newImage:newImage];
+                }];
+                
+                
+                [alertController addAction:okAction];
+                [alertController addAction:allAction];
+                [alertController addAction:saveAction];
+                [alertController addAction:cancelAction];
+                
+                [self presentViewController:alertController animated:YES completion:nil];
+            }
+        }
+        else
+        {
+            NSLog(@"不允许程序内付费购买");
+            [MBProgressHUD showErrorMessage:NSLocalizedString(@"NoPermission", nil)];
+        }
+        return;
+    }
+    [self finishEditController:controller newImage:newImage];
+}
+
+-(void)finishEditController:(AutoEditorViewController *)controller newImage:(UIImage *)newImage{
     //分享的标题
     NSString *textToShare = NSLocalizedString(@"Share", nil);
     //分享的图片
@@ -318,13 +373,48 @@
     [self.view addSubview:self.alphaView];
     
     SettingView *settingView = [[[NSBundle mainBundle] loadNibNamed:@"SettingView" owner:self options:nil] lastObject];
+    [self.alphaView addSubview:settingView];
     if (IS_PAD) {
-        [settingView setFrame:CGRectMake(- self.view.bounds.size.width * 0.4, 0, self.view.bounds.size.width * 0.4, self.view.bounds.size.height)];
+        if ([ProManager isProductPaid:AD_PRODUCT_ID] || [ProManager isFullPaid]){
+            [settingView setFrame:CGRectMake(- self.view.bounds.size.width * 0.4, 0, self.view.bounds.size.width * 0.4, self.view.bounds.size.height)];
+        }else{
+            if(Is_iPhoneX){
+                [settingView setFrame:CGRectMake(- self.view.bounds.size.width * 0.4, 0, self.view.bounds.size.width * 0.4, self.view.bounds.size.height)];
+                _bannerView = [self createAndLoadBannerView];
+                CGRect temp = _bannerView.frame;
+                temp.origin.y = settingView.frame.size.height - 85;
+                _bannerView.frame = temp;
+                [_alphaView addSubview:_bannerView];
+            }else{
+                [settingView setFrame:CGRectMake(- self.view.bounds.size.width * 0.4, 0, self.view.bounds.size.width * 0.4, self.view.bounds.size.height - 90)];
+                _bannerView = [self createAndLoadBannerView];
+                CGRect temp = _bannerView.frame;
+                temp.origin.y = settingView.frame.size.height;
+                _bannerView.frame = temp;
+                [_alphaView addSubview:_bannerView];
+            }
+        }
     }else{
-        [settingView setFrame:CGRectMake(- self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+        if ([ProManager isProductPaid:AD_PRODUCT_ID] || [ProManager isFullPaid]){
+            [settingView setFrame:CGRectMake(- self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+        }else{
+            if(Is_iPhoneX){
+                [settingView setFrame:CGRectMake(- self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+                _bannerView = [self createAndLoadBannerView];
+                CGRect temp = _bannerView.frame;
+                temp.origin.y = settingView.frame.size.height - 85;
+                _bannerView.frame = temp;
+            }else{
+                [settingView setFrame:CGRectMake(- self.view.bounds.size.width, 0, self.view.bounds.size.width, self.view.bounds.size.height - 50)];
+                _bannerView = [self createAndLoadBannerView];
+                CGRect temp = _bannerView.frame;
+                temp.origin.y = settingView.frame.size.height;
+                _bannerView.frame = temp;
+            }
+            [_alphaView addSubview:_bannerView];
+        }
     }
     settingView.tag = 1;
-    [self.alphaView addSubview:settingView];
     [self.alphaView setHidden:NO];
     
     [UIView animateWithDuration:0.3 animations:^{
@@ -338,7 +428,34 @@
     }];
 }
 
+- (GADBannerView *)createAndLoadBannerView{
+    GADBannerView *bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerPortrait];
+    bannerView.hidden = YES;
+    bannerView.rootViewController = self;
+    [bannerView setAdUnitID:AD_BANNER_ID];
+    bannerView.delegate = self;
+    [bannerView loadRequest:[GADRequest request]];
+    return bannerView;
+}
+
+- (void)adViewDidReceiveAd:(GADBannerView *)bannerView{
+    if ([ProManager isProductPaid:AD_PRODUCT_ID] || [ProManager isFullPaid]) {
+        bannerView.hidden = YES;
+    }else{
+        bannerView.hidden = NO;
+    }
+}
+
+- (void)adView:(GADBannerView *)adView didFailToReceiveAdWithError:(GADRequestError *)error {
+    NSLog(@"adView:didFailToReceiveAdWithError: %@", error.localizedDescription);
+}
+
 - (void)onCloseSettingView{
+    if (_bannerView) {
+        [_bannerView removeFromSuperview];
+        _bannerView.delegate = nil;
+        _bannerView = nil;
+    }
     [UIView animateWithDuration:0.3 animations:^{
         CGRect temp = [self.alphaView viewWithTag:1].frame;
         temp.origin.x = - temp.size.width;
@@ -365,6 +482,13 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(onCloseSettingView) name:HIDE_SETTING_ANIMATION object:nil];
+    if ([ProManager isProductPaid:AD_PRODUCT_ID] || [ProManager isFullPaid]) {
+        if (_bannerView) {
+            [_bannerView removeFromSuperview];
+            _bannerView.delegate = nil;
+            _bannerView = nil;
+        }
+    }
 }
 
 - (void)viewDidDisappear:(BOOL)animated{

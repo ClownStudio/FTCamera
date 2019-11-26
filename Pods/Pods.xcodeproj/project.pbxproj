@@ -3,47 +3,47 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0563FD1BAD77D6F69EB1BDCF4C75BE6E /* CGXStringPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ECA1B0CD44925036E6524EBA453F58B /* CGXStringPickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0CA090164C37349150E7127E9B9D84CE /* CGXPickerUIBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 194D8A33C016AC684DC682C7ABA437A7 /* CGXPickerUIBaseView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1A2FB482A3E6213D3D4A3E7FD621B223 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 00363E26FBB7EBDC694E0E0B143D678B /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		1E528D890E3B32D53D963CE1417BA4D8 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47B544D728F21242C0C19C7676101E14 /* MBProgressHUD-dummy.m */; };
+		0563FD1BAD77D6F69EB1BDCF4C75BE6E /* CGXStringPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E273CAB82151977A0766964D5916CE1 /* CGXStringPickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0CA090164C37349150E7127E9B9D84CE /* CGXPickerUIBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 01DE87AF8DB79D18AEFE3D75C69695B3 /* CGXPickerUIBaseView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1A2FB482A3E6213D3D4A3E7FD621B223 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 134E98C83E12A584401E163B9537F23C /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1E528D890E3B32D53D963CE1417BA4D8 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2950B634F0F3C45624C15BAFAB4F2F19 /* MBProgressHUD-dummy.m */; };
 		1F704BF4BEE5B5A64A4B8AB4472A1958 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7524F0BE53ABC149C4387DFEFE2B51 /* Foundation.framework */; };
-		2F41A17330D4937A615F0E6408BCF56A /* CodeDirectory in Sources */ = {isa = PBXBuildFile; fileRef = 5EC54477183B79F0E3E9915E24AA56A1 /* CodeDirectory */; };
-		3359B1E0A7384E2170E390B99D359156 /* CGXDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BADE16538A5D9A4FB0B43BC87A898B3 /* CGXDatePickerView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2F41A17330D4937A615F0E6408BCF56A /* CodeDirectory in Sources */ = {isa = PBXBuildFile; fileRef = CBBFFEAC056004290322B703E3068289 /* CodeDirectory */; };
+		3359B1E0A7384E2170E390B99D359156 /* CGXDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5254C9BDEB5E9964D779BD68C929C03D /* CGXDatePickerView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		34B9E6276692FC7C080C784819857491 /* Pods-FTCamera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F2752E217674301B505D8949BDDA7C /* Pods-FTCamera-dummy.m */; };
-		3C3C58DAF70F5352113756BB7FEC7A17 /* CGXPickerViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A50C9B548EC3FD2D482E083000E3FDD /* CGXPickerViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		41702605F96D1CD823F3AA64EC161650 /* CGXAddressCity.plist in Sources */ = {isa = PBXBuildFile; fileRef = 0660061003177B8F6FE22A4C096D742D /* CGXAddressCity.plist */; };
+		3C3C58DAF70F5352113756BB7FEC7A17 /* CGXPickerViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 276753FB3444AC6314E9B0C19F0480D7 /* CGXPickerViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		41702605F96D1CD823F3AA64EC161650 /* CGXAddressCity.plist in Sources */ = {isa = PBXBuildFile; fileRef = A6086FEAEE1AD86083F5F3FB3CE65A54 /* CGXAddressCity.plist */; };
 		509D8F10DC7BD0265790C450C94228E3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8621F66D446C6F4AC0D7F817144EB150 /* CoreGraphics.framework */; };
-		59FEAA005B89924B5DE1C2EF2B8A833B /* CodeRequirements in Sources */ = {isa = PBXBuildFile; fileRef = DDF01DDE0241183C64B359C5A74B0E08 /* CodeRequirements */; };
-		640714D4B7A893AD95FAEDA88C6CD399 /* NSDate+CGXPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD3B66ABF831CE06D6C84BE1726517E /* NSDate+CGXPicker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		669005691687C6B3E1258467793987F6 /* MBProgressHUD+JDragon.h in Headers */ = {isa = PBXBuildFile; fileRef = 2504718734234422E5F2428D71EA76C5 /* MBProgressHUD+JDragon.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6ED5A429751F17CC2C9F736496C5E9DE /* NSDate+CGXPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = D0AC14C24A5235F43F90973B7F721BFC /* NSDate+CGXPicker.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		76EF196FDFE3C1DAB4989E14447EAB2E /* CodeRequirements-1 in Sources */ = {isa = PBXBuildFile; fileRef = 8C2AC4FD2E62A95CF1B0B65E96AF9F25 /* CodeRequirements-1 */; };
-		7AFF8A8183A41A840CC67716638233DD /* CGXAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CB947A621BE874A6C2CA1B94C464D9FF /* CGXAddressModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		7F3F4C479F56BD5F18769846C155CB59 /* CGXBasicInfoPicker.plist in Sources */ = {isa = PBXBuildFile; fileRef = 0AC0716DE57C15A8500E9F1D526CC7A9 /* CGXBasicInfoPicker.plist */; };
-		8730B17B140FEC443B43C336FE1C8637 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = FFBBA13F2AE78BA44A03E66CBD256434 /* Info.plist */; };
-		8DDB507683AFD34C43B7FF97892E8856 /* MBProgressHUD+JDragon.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D06488626A127C1D63B2EAB1A6344D /* MBProgressHUD+JDragon.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		59FEAA005B89924B5DE1C2EF2B8A833B /* CodeRequirements in Sources */ = {isa = PBXBuildFile; fileRef = 6108C6E9CE48250E75794BA7B555175F /* CodeRequirements */; };
+		640714D4B7A893AD95FAEDA88C6CD399 /* NSDate+CGXPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A448B0E5D831640B8CF6B3E9E53620 /* NSDate+CGXPicker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		669005691687C6B3E1258467793987F6 /* MBProgressHUD+JDragon.h in Headers */ = {isa = PBXBuildFile; fileRef = 180D6D6212C34F5466F638119B167FD9 /* MBProgressHUD+JDragon.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6ED5A429751F17CC2C9F736496C5E9DE /* NSDate+CGXPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AB5678F43AD7B5753347F11BE98C3B5 /* NSDate+CGXPicker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		76EF196FDFE3C1DAB4989E14447EAB2E /* CodeRequirements-1 in Sources */ = {isa = PBXBuildFile; fileRef = BBD7862DCA793BB8DCF503AAAC990EC0 /* CodeRequirements-1 */; };
+		7AFF8A8183A41A840CC67716638233DD /* CGXAddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA129C0D5C5F63CC934676E28CA551F5 /* CGXAddressModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7F3F4C479F56BD5F18769846C155CB59 /* CGXBasicInfoPicker.plist in Sources */ = {isa = PBXBuildFile; fileRef = 75C0060A1C24B7FDA0CC3F379706F7CA /* CGXBasicInfoPicker.plist */; };
+		8730B17B140FEC443B43C336FE1C8637 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 77F82085B99B92F80104410798C2D464 /* Info.plist */; };
+		8DDB507683AFD34C43B7FF97892E8856 /* MBProgressHUD+JDragon.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5622DFB55E189A499D807B374F3AC0 /* MBProgressHUD+JDragon.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		951E122F9EFF8F6DF2AAF2E80A10630A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7524F0BE53ABC149C4387DFEFE2B51 /* Foundation.framework */; };
-		A1AB60B19719BFBF01EF886F97FFFA43 /* CGXDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = AE1093698703444EF77D679A619110D1 /* CGXDatePickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A3A418ABF5CFA7AE3CD0B290BCD4ED81 /* CGXPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9C30E9C3398A05600191ECC78DBABB /* CGXPickerView-dummy.m */; };
-		A8592EC795A06C1E909FA579762ACBB4 /* CGXAddressPcikerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E82AF0F43DD69C863F4BF75E042E838 /* CGXAddressPcikerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A1AB60B19719BFBF01EF886F97FFFA43 /* CGXDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7592714144A315DDAB6AF3DEB94BFDCC /* CGXDatePickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A3A418ABF5CFA7AE3CD0B290BCD4ED81 /* CGXPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B91D29A1FBE247B3212576D25E1516F3 /* CGXPickerView-dummy.m */; };
+		A8592EC795A06C1E909FA579762ACBB4 /* CGXAddressPcikerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D386923A27C73E18C391B9A91F6437A /* CGXAddressPcikerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		AABE4E8955C4A4E993547ABC3FEE058F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7524F0BE53ABC149C4387DFEFE2B51 /* Foundation.framework */; };
-		B8F03610707DE4A0F893590B8ED91CD7 /* CodeSignature in Sources */ = {isa = PBXBuildFile; fileRef = 6B88C14CF8E6B4567014D271EA2EAA0C /* CodeSignature */; };
-		BB3CF9E1F2DD54C38E7FF1860063D49A /* CGXAddressModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D360CB5A5E528737F417CE9F3D67C6AA /* CGXAddressModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		BB691FCCE5814E35AA89632DB21D8FAD /* CodeResources in Sources */ = {isa = PBXBuildFile; fileRef = 51441ED33DE04225B7B89AC1F9834689 /* CodeResources */; };
-		BE08FC3CA35C9B85C0B51D945646E7E3 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 68251E658A33BFC5F0359EA1515A0822 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C56B93EE1591B9118822A59BE7864B31 /* CGXPickerViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C1890918DF6DC677DCF58E07736ED874 /* CGXPickerViewManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C56BAF87237D8B4296733F1760E765FE /* CGXAddressPcikerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6D5221D3A34A6D15A0959BFC9603B1 /* CGXAddressPcikerView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CA91F47322AFAAF50552DB9F9E63FDEB /* CGXStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 201ED7E659634BDCB4220A86F5505A24 /* CGXStringPickerView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CFB0717294DDD7B2F3408456646F793C /* MBProgressHUD+JDragon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8484F54E15605D4C8372AFBD83CBD7B /* MBProgressHUD+JDragon-dummy.m */; };
-		D495FF912D67F5861C06C619D20CF26E /* CGXPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2DABF63BBEB719E9A3E959D6A5F51E /* CGXPickerView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		DC57BC2FCA2E0DFC47A2CB4ADB14DE52 /* CGXPickerUIBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1229654A389DA6592083E3BE9403859 /* CGXPickerUIBaseView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B8F03610707DE4A0F893590B8ED91CD7 /* CodeSignature in Sources */ = {isa = PBXBuildFile; fileRef = 87E80C636F035E276635BB94962423A8 /* CodeSignature */; };
+		BB3CF9E1F2DD54C38E7FF1860063D49A /* CGXAddressModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A60D347FCAE3C4144A5D716DFF40047 /* CGXAddressModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BB691FCCE5814E35AA89632DB21D8FAD /* CodeResources in Sources */ = {isa = PBXBuildFile; fileRef = 9EF76061E6E1526FF0F99063C1CC7C5C /* CodeResources */; };
+		BE08FC3CA35C9B85C0B51D945646E7E3 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 33FC382F6800D40A99BB9F60C3AD3EDA /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C56B93EE1591B9118822A59BE7864B31 /* CGXPickerViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F82ED039EBB48537567DDE12DF5165B7 /* CGXPickerViewManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C56BAF87237D8B4296733F1760E765FE /* CGXAddressPcikerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F046563CEEA26E80E9FA77C07AA100 /* CGXAddressPcikerView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CA91F47322AFAAF50552DB9F9E63FDEB /* CGXStringPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF25F8BB607635DC68CB77835D1A107A /* CGXStringPickerView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CFB0717294DDD7B2F3408456646F793C /* MBProgressHUD+JDragon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 949ED523AED63D3BBDB2258742DBD58E /* MBProgressHUD+JDragon-dummy.m */; };
+		D495FF912D67F5861C06C619D20CF26E /* CGXPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AD52BCD7C5AD076402F17BEDB5F784 /* CGXPickerView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DC57BC2FCA2E0DFC47A2CB4ADB14DE52 /* CGXPickerUIBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = EABECC5AE793C4A150EF1E461C2984AA /* CGXPickerUIBaseView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F18E30D11CE2519EBF3AEB65AB08609F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC7524F0BE53ABC149C4387DFEFE2B51 /* Foundation.framework */; };
-		FB11A70432A2E266A8284CF90ADCC5C2 /* CGXPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = F75DCBDD590FCD28ECD45C97923B866C /* CGXPickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FB11A70432A2E266A8284CF90ADCC5C2 /* CGXPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 652C723DA3DC450A1BD621ADF26582DA /* CGXPickerView.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,59 +78,60 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00363E26FBB7EBDC694E0E0B143D678B /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		0660061003177B8F6FE22A4C096D742D /* CGXAddressCity.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = CGXAddressCity.plist; path = CGXPickerView/CGXPickerView.bundle/Contents/Resources/CGXAddressCity.plist; sourceTree = "<group>"; };
-		0AC0716DE57C15A8500E9F1D526CC7A9 /* CGXBasicInfoPicker.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = CGXBasicInfoPicker.plist; path = CGXPickerView/CGXPickerView.bundle/Contents/Resources/CGXBasicInfoPicker.plist; sourceTree = "<group>"; };
-		0BD3B66ABF831CE06D6C84BE1726517E /* NSDate+CGXPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+CGXPicker.m"; path = "CGXPickerView/NSDate+CGXPicker.m"; sourceTree = "<group>"; };
-		14C74E6110C5CD84B14B52E9166D41A3 /* libCGXPickerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCGXPickerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		194D8A33C016AC684DC682C7ABA437A7 /* CGXPickerUIBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXPickerUIBaseView.h; path = CGXPickerView/CGXPickerUIBaseView.h; sourceTree = "<group>"; };
-		1E82AF0F43DD69C863F4BF75E042E838 /* CGXAddressPcikerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXAddressPcikerView.h; path = CGXPickerView/CGXAddressPcikerView.h; sourceTree = "<group>"; };
-		201ED7E659634BDCB4220A86F5505A24 /* CGXStringPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXStringPickerView.m; path = CGXPickerView/CGXStringPickerView.m; sourceTree = "<group>"; };
-		2504718734234422E5F2428D71EA76C5 /* MBProgressHUD+JDragon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MBProgressHUD+JDragon.h"; path = "MBProgressHUD+JDragon/MBProgressHUD+JDragon.h"; sourceTree = "<group>"; };
-		2A50C9B548EC3FD2D482E083000E3FDD /* CGXPickerViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXPickerViewManager.h; path = CGXPickerView/CGXPickerViewManager.h; sourceTree = "<group>"; };
-		2DB95C9BCDFE60A2F13317E70590301B /* CGXPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CGXPickerView.xcconfig; sourceTree = "<group>"; };
-		47B544D728F21242C0C19C7676101E14 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
-		4BADE16538A5D9A4FB0B43BC87A898B3 /* CGXDatePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXDatePickerView.m; path = CGXPickerView/CGXDatePickerView.m; sourceTree = "<group>"; };
-		51441ED33DE04225B7B89AC1F9834689 /* CodeResources */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = CodeResources; path = CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeResources; sourceTree = "<group>"; };
+		01DE87AF8DB79D18AEFE3D75C69695B3 /* CGXPickerUIBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXPickerUIBaseView.h; path = CGXPickerView/CGXPickerUIBaseView.h; sourceTree = "<group>"; };
+		134E98C83E12A584401E163B9537F23C /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		14C74E6110C5CD84B14B52E9166D41A3 /* libCGXPickerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCGXPickerView.a; path = libCGXPickerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		15A448B0E5D831640B8CF6B3E9E53620 /* NSDate+CGXPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+CGXPicker.m"; path = "CGXPickerView/NSDate+CGXPicker.m"; sourceTree = "<group>"; };
+		180D6D6212C34F5466F638119B167FD9 /* MBProgressHUD+JDragon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MBProgressHUD+JDragon.h"; path = "MBProgressHUD+JDragon/MBProgressHUD+JDragon.h"; sourceTree = "<group>"; };
+		26FDCAEBD8D666725CE49E537A3CE492 /* MBProgressHUD+JDragon.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = "MBProgressHUD+JDragon.bundle"; path = "MBProgressHUD+JDragon/MBProgressHUD+JDragon.bundle"; sourceTree = "<group>"; };
+		276753FB3444AC6314E9B0C19F0480D7 /* CGXPickerViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXPickerViewManager.h; path = CGXPickerView/CGXPickerViewManager.h; sourceTree = "<group>"; };
+		2950B634F0F3C45624C15BAFAB4F2F19 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		33FC382F6800D40A99BB9F60C3AD3EDA /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		4A60D347FCAE3C4144A5D716DFF40047 /* CGXAddressModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXAddressModel.h; path = CGXPickerView/CGXAddressModel.h; sourceTree = "<group>"; };
+		4D386923A27C73E18C391B9A91F6437A /* CGXAddressPcikerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXAddressPcikerView.h; path = CGXPickerView/CGXAddressPcikerView.h; sourceTree = "<group>"; };
+		5254C9BDEB5E9964D779BD68C929C03D /* CGXDatePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXDatePickerView.m; path = CGXPickerView/CGXDatePickerView.m; sourceTree = "<group>"; };
 		56F2752E217674301B505D8949BDDA7C /* Pods-FTCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FTCamera-dummy.m"; sourceTree = "<group>"; };
-		5914E3EAEC626C062B46817E505991AA /* CGXPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CGXPickerView-prefix.pch"; sourceTree = "<group>"; };
-		5A9C30E9C3398A05600191ECC78DBABB /* CGXPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CGXPickerView-dummy.m"; sourceTree = "<group>"; };
-		5EC54477183B79F0E3E9915E24AA56A1 /* CodeDirectory */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = CodeDirectory; path = CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeDirectory; sourceTree = "<group>"; };
-		5F2DABF63BBEB719E9A3E959D6A5F51E /* CGXPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXPickerView.m; path = CGXPickerView/CGXPickerView.m; sourceTree = "<group>"; };
-		68251E658A33BFC5F0359EA1515A0822 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		6B88C14CF8E6B4567014D271EA2EAA0C /* CodeSignature */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = CodeSignature; path = CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeSignature; sourceTree = "<group>"; };
+		60202D4837E5EC142655F003895616AF /* CGXPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CGXPickerView-prefix.pch"; sourceTree = "<group>"; };
+		60F046563CEEA26E80E9FA77C07AA100 /* CGXAddressPcikerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXAddressPcikerView.m; path = CGXPickerView/CGXAddressPcikerView.m; sourceTree = "<group>"; };
+		6108C6E9CE48250E75794BA7B555175F /* CodeRequirements */ = {isa = PBXFileReference; includeInIndex = 1; name = CodeRequirements; path = CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeRequirements; sourceTree = "<group>"; };
+		652C723DA3DC450A1BD621ADF26582DA /* CGXPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXPickerView.h; path = CGXPickerView/CGXPickerView.h; sourceTree = "<group>"; };
 		72DDC98D20BAAAA8F2AC8C8317003558 /* Pods-FTCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTCamera.debug.xcconfig"; sourceTree = "<group>"; };
-		73BC3452E5FC9544934D420DB799EB55 /* MBProgressHUD+JDragon.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = "MBProgressHUD+JDragon.bundle"; path = "MBProgressHUD+JDragon/MBProgressHUD+JDragon.bundle"; sourceTree = "<group>"; };
-		77DF18ACD57992AD9865AFA7592DAE0C /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7592714144A315DDAB6AF3DEB94BFDCC /* CGXDatePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXDatePickerView.h; path = CGXPickerView/CGXDatePickerView.h; sourceTree = "<group>"; };
+		75C0060A1C24B7FDA0CC3F379706F7CA /* CGXBasicInfoPicker.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = CGXBasicInfoPicker.plist; path = CGXPickerView/CGXPickerView.bundle/Contents/Resources/CGXBasicInfoPicker.plist; sourceTree = "<group>"; };
+		77DF18ACD57992AD9865AFA7592DAE0C /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMBProgressHUD.a; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		77F82085B99B92F80104410798C2D464 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = CGXPickerView/CGXPickerView.bundle/Contents/Info.plist; sourceTree = "<group>"; };
+		78820DD3529B75C85A04B1210118F070 /* MBProgressHUD+JDragon.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MBProgressHUD+JDragon.xcconfig"; sourceTree = "<group>"; };
 		8621F66D446C6F4AC0D7F817144EB150 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		87E80C636F035E276635BB94962423A8 /* CodeSignature */ = {isa = PBXFileReference; includeInIndex = 1; name = CodeSignature; path = CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeSignature; sourceTree = "<group>"; };
 		89744A045C087F2B4C829DE4AB562AFB /* Pods-FTCamera-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FTCamera-acknowledgements.plist"; sourceTree = "<group>"; };
+		8AB3F228CAA31AA902FFCDC077EEB216 /* MBProgressHUD+JDragon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+JDragon-prefix.pch"; sourceTree = "<group>"; };
+		8AB5678F43AD7B5753347F11BE98C3B5 /* NSDate+CGXPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+CGXPicker.h"; path = "CGXPickerView/NSDate+CGXPicker.h"; sourceTree = "<group>"; };
 		8B8C2A9CB799BA385E3877EBA69C0F71 /* Pods-FTCamera-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FTCamera-frameworks.sh"; sourceTree = "<group>"; };
-		8C2AC4FD2E62A95CF1B0B65E96AF9F25 /* CodeRequirements-1 */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "CodeRequirements-1"; path = "CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeRequirements-1"; sourceTree = "<group>"; };
-		8ECA1B0CD44925036E6524EBA453F58B /* CGXStringPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXStringPickerView.h; path = CGXPickerView/CGXStringPickerView.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94D06488626A127C1D63B2EAB1A6344D /* MBProgressHUD+JDragon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MBProgressHUD+JDragon.m"; path = "MBProgressHUD+JDragon/MBProgressHUD+JDragon.m"; sourceTree = "<group>"; };
-		9A38BB46013A68D3E8990E93E6C2C355 /* MBProgressHUD+JDragon.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MBProgressHUD+JDragon.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		949ED523AED63D3BBDB2258742DBD58E /* MBProgressHUD+JDragon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+JDragon-dummy.m"; sourceTree = "<group>"; };
+		9E273CAB82151977A0766964D5916CE1 /* CGXStringPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXStringPickerView.h; path = CGXPickerView/CGXStringPickerView.h; sourceTree = "<group>"; };
+		9EF76061E6E1526FF0F99063C1CC7C5C /* CodeResources */ = {isa = PBXFileReference; includeInIndex = 1; name = CodeResources; path = CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeResources; sourceTree = "<group>"; };
 		A5054FCBDC28C6842C93FB11BA85A6B8 /* Pods-FTCamera-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FTCamera-resources.sh"; sourceTree = "<group>"; };
-		A8F1E11B63E2FE1735902223F5334D59 /* CGXPickerView.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = CGXPickerView.bundle; path = CGXPickerView/CGXPickerView.bundle; sourceTree = "<group>"; };
+		A6086FEAEE1AD86083F5F3FB3CE65A54 /* CGXAddressCity.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = CGXAddressCity.plist; path = CGXPickerView/CGXPickerView.bundle/Contents/Resources/CGXAddressCity.plist; sourceTree = "<group>"; };
+		A753FB43A3A8A321834576D0B18FC8E2 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
 		AC7524F0BE53ABC149C4387DFEFE2B51 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		AE1093698703444EF77D679A619110D1 /* CGXDatePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXDatePickerView.h; path = CGXPickerView/CGXDatePickerView.h; sourceTree = "<group>"; };
-		B1229654A389DA6592083E3BE9403859 /* CGXPickerUIBaseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXPickerUIBaseView.m; path = CGXPickerView/CGXPickerUIBaseView.m; sourceTree = "<group>"; };
-		B8484F54E15605D4C8372AFBD83CBD7B /* MBProgressHUD+JDragon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+JDragon-dummy.m"; sourceTree = "<group>"; };
-		C1890918DF6DC677DCF58E07736ED874 /* CGXPickerViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXPickerViewManager.m; path = CGXPickerView/CGXPickerViewManager.m; sourceTree = "<group>"; };
-		CB947A621BE874A6C2CA1B94C464D9FF /* CGXAddressModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXAddressModel.m; path = CGXPickerView/CGXAddressModel.m; sourceTree = "<group>"; };
-		CDCDB4486BECC7F9FBC0F553590D1EFE /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		CEB10112820C6D926C9B71DB27F54DB5 /* libPods-FTCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FTCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0AC14C24A5235F43F90973B7F721BFC /* NSDate+CGXPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+CGXPicker.h"; path = "CGXPickerView/NSDate+CGXPicker.h"; sourceTree = "<group>"; };
-		D360CB5A5E528737F417CE9F3D67C6AA /* CGXAddressModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXAddressModel.h; path = CGXPickerView/CGXAddressModel.h; sourceTree = "<group>"; };
+		B91D29A1FBE247B3212576D25E1516F3 /* CGXPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CGXPickerView-dummy.m"; sourceTree = "<group>"; };
+		BBD7862DCA793BB8DCF503AAAC990EC0 /* CodeRequirements-1 */ = {isa = PBXFileReference; includeInIndex = 1; name = "CodeRequirements-1"; path = "CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeRequirements-1"; sourceTree = "<group>"; };
+		CBBFFEAC056004290322B703E3068289 /* CodeDirectory */ = {isa = PBXFileReference; includeInIndex = 1; name = CodeDirectory; path = CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeDirectory; sourceTree = "<group>"; };
+		CEB10112820C6D926C9B71DB27F54DB5 /* libPods-FTCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FTCamera.a"; path = "libPods-FTCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA129C0D5C5F63CC934676E28CA551F5 /* CGXAddressModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXAddressModel.m; path = CGXPickerView/CGXAddressModel.m; sourceTree = "<group>"; };
+		DB5622DFB55E189A499D807B374F3AC0 /* MBProgressHUD+JDragon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MBProgressHUD+JDragon.m"; path = "MBProgressHUD+JDragon/MBProgressHUD+JDragon.m"; sourceTree = "<group>"; };
+		DC1E201A172C5BEBFE6B5E4D15D7B5A0 /* CGXPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CGXPickerView.xcconfig; sourceTree = "<group>"; };
 		DC941E7F78FD4FDA9E657D553C0CADEC /* Pods-FTCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTCamera.release.xcconfig"; sourceTree = "<group>"; };
-		DD6D5221D3A34A6D15A0959BFC9603B1 /* CGXAddressPcikerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXAddressPcikerView.m; path = CGXPickerView/CGXAddressPcikerView.m; sourceTree = "<group>"; };
-		DDF01DDE0241183C64B359C5A74B0E08 /* CodeRequirements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = CodeRequirements; path = CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeRequirements; sourceTree = "<group>"; };
-		EC21642FC657EEA97D525118D5CB918C /* MBProgressHUD+JDragon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+JDragon-prefix.pch"; sourceTree = "<group>"; };
-		F1783680425E1E22AD791BE2CF2702F8 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
-		F27E2D3FEAE3E58A3F1A5C2EA17DF5BB /* libMBProgressHUD+JDragon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libMBProgressHUD+JDragon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F75DCBDD590FCD28ECD45C97923B866C /* CGXPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXPickerView.h; path = CGXPickerView/CGXPickerView.h; sourceTree = "<group>"; };
+		DD0079FDA07A5C84650F0C401B898474 /* CGXPickerView.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = CGXPickerView.bundle; path = CGXPickerView/CGXPickerView.bundle; sourceTree = "<group>"; };
+		E0385E4172DFAC26329BBD8EB0C0B73D /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		E6CB5B7B84418F6E70355D233DD5916F /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		EABECC5AE793C4A150EF1E461C2984AA /* CGXPickerUIBaseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXPickerUIBaseView.m; path = CGXPickerView/CGXPickerUIBaseView.m; sourceTree = "<group>"; };
+		F1AD52BCD7C5AD076402F17BEDB5F784 /* CGXPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXPickerView.m; path = CGXPickerView/CGXPickerView.m; sourceTree = "<group>"; };
+		F27E2D3FEAE3E58A3F1A5C2EA17DF5BB /* libMBProgressHUD+JDragon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libMBProgressHUD+JDragon.a"; path = "libMBProgressHUD+JDragon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F802278886686AA52DD13DDFD4E88325 /* Pods-FTCamera-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FTCamera-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FFBBA13F2AE78BA44A03E66CBD256434 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = CGXPickerView/CGXPickerView.bundle/Contents/Info.plist; sourceTree = "<group>"; };
+		F82ED039EBB48537567DDE12DF5165B7 /* CGXPickerViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXPickerViewManager.m; path = CGXPickerView/CGXPickerViewManager.m; sourceTree = "<group>"; };
+		FF25F8BB607635DC68CB77835D1A107A /* CGXStringPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXStringPickerView.m; path = CGXPickerView/CGXStringPickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,15 +171,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		247EAF28C1B09EC89396CD3B6F50A58A /* MBProgressHUD+JDragon */ = {
+		05B9F0D15DCA80EC128FCFAD43AB59BD /* CGXPickerView */ = {
 			isa = PBXGroup;
 			children = (
-				2504718734234422E5F2428D71EA76C5 /* MBProgressHUD+JDragon.h */,
-				94D06488626A127C1D63B2EAB1A6344D /* MBProgressHUD+JDragon.m */,
-				FB8D0559C7B8FECBFA5980ACC1BCC53A /* Resources */,
-				D8ABC92F5031F2AA9FFCEE0806541707 /* Support Files */,
+				A6086FEAEE1AD86083F5F3FB3CE65A54 /* CGXAddressCity.plist */,
+				4A60D347FCAE3C4144A5D716DFF40047 /* CGXAddressModel.h */,
+				DA129C0D5C5F63CC934676E28CA551F5 /* CGXAddressModel.m */,
+				4D386923A27C73E18C391B9A91F6437A /* CGXAddressPcikerView.h */,
+				60F046563CEEA26E80E9FA77C07AA100 /* CGXAddressPcikerView.m */,
+				75C0060A1C24B7FDA0CC3F379706F7CA /* CGXBasicInfoPicker.plist */,
+				7592714144A315DDAB6AF3DEB94BFDCC /* CGXDatePickerView.h */,
+				5254C9BDEB5E9964D779BD68C929C03D /* CGXDatePickerView.m */,
+				01DE87AF8DB79D18AEFE3D75C69695B3 /* CGXPickerUIBaseView.h */,
+				EABECC5AE793C4A150EF1E461C2984AA /* CGXPickerUIBaseView.m */,
+				652C723DA3DC450A1BD621ADF26582DA /* CGXPickerView.h */,
+				F1AD52BCD7C5AD076402F17BEDB5F784 /* CGXPickerView.m */,
+				276753FB3444AC6314E9B0C19F0480D7 /* CGXPickerViewManager.h */,
+				F82ED039EBB48537567DDE12DF5165B7 /* CGXPickerViewManager.m */,
+				9E273CAB82151977A0766964D5916CE1 /* CGXStringPickerView.h */,
+				FF25F8BB607635DC68CB77835D1A107A /* CGXStringPickerView.m */,
+				CBBFFEAC056004290322B703E3068289 /* CodeDirectory */,
+				6108C6E9CE48250E75794BA7B555175F /* CodeRequirements */,
+				BBD7862DCA793BB8DCF503AAAC990EC0 /* CodeRequirements-1 */,
+				9EF76061E6E1526FF0F99063C1CC7C5C /* CodeResources */,
+				87E80C636F035E276635BB94962423A8 /* CodeSignature */,
+				77F82085B99B92F80104410798C2D464 /* Info.plist */,
+				8AB5678F43AD7B5753347F11BE98C3B5 /* NSDate+CGXPicker.h */,
+				15A448B0E5D831640B8CF6B3E9E53620 /* NSDate+CGXPicker.m */,
+				0EB6AA6BC5C336B28A50930013219996 /* Resources */,
+				9F609318C190C46D7AFD6B71386DE657 /* Support Files */,
 			);
-			path = "MBProgressHUD+JDragon";
+			name = CGXPickerView;
+			path = CGXPickerView;
+			sourceTree = "<group>";
+		};
+		0BA48AC1C89BF69769A32B22BDA6C47C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				78820DD3529B75C85A04B1210118F070 /* MBProgressHUD+JDragon.xcconfig */,
+				949ED523AED63D3BBDB2258742DBD58E /* MBProgressHUD+JDragon-dummy.m */,
+				8AB3F228CAA31AA902FFCDC077EEB216 /* MBProgressHUD+JDragon-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD+JDragon";
+			sourceTree = "<group>";
+		};
+		0EB6AA6BC5C336B28A50930013219996 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD0079FDA07A5C84650F0C401B898474 /* CGXPickerView.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0EB82E50DE8B5E85CFDA087A04ADDD9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6CB5B7B84418F6E70355D233DD5916F /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14B91A9B6CE80CAF0C93C93D008683FA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				26FDCAEBD8D666725CE49E537A3CE492 /* MBProgressHUD+JDragon.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -189,33 +248,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4D8AB11C3F539396810190304C74BACF /* Support Files */ = {
+		59847CAFE6427D0100EABDCF1B2ABC3D /* MBProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				2DB95C9BCDFE60A2F13317E70590301B /* CGXPickerView.xcconfig */,
-				5A9C30E9C3398A05600191ECC78DBABB /* CGXPickerView-dummy.m */,
-				5914E3EAEC626C062B46817E505991AA /* CGXPickerView-prefix.pch */,
+				33FC382F6800D40A99BB9F60C3AD3EDA /* MBProgressHUD.h */,
+				134E98C83E12A584401E163B9537F23C /* MBProgressHUD.m */,
+				7D381C57DCBBF58E6FC5D38D46D6B836 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/CGXPickerView";
+			name = MBProgressHUD;
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
-		50C0ADE0CE30F90C404BD8F2CB8229F7 /* Resources */ = {
+		7699B4C91402A655AB7C1BE73A5D5971 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A8F1E11B63E2FE1735902223F5334D59 /* CGXPickerView.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		770D4B953145D2B92971FB94B75DDFDC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				FB5822407ACB896DA6A42BCBE21BCBBF /* CGXPickerView */,
-				E0189E5BA1DF4D3C085A25A209B53174 /* MBProgressHUD */,
-				247EAF28C1B09EC89396CD3B6F50A58A /* MBProgressHUD+JDragon */,
+				05B9F0D15DCA80EC128FCFAD43AB59BD /* CGXPickerView */,
+				D8632A9BE7CF72BA2C3488C96708D74C /* Google-Mobile-Ads-SDK */,
+				59847CAFE6427D0100EABDCF1B2ABC3D /* MBProgressHUD */,
+				82D28E78BCD7668EF2DBBB4C79E17D95 /* MBProgressHUD+JDragon */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7D381C57DCBBF58E6FC5D38D46D6B836 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0385E4172DFAC26329BBD8EB0C0B73D /* MBProgressHUD.xcconfig */,
+				2950B634F0F3C45624C15BAFAB4F2F19 /* MBProgressHUD-dummy.m */,
+				A753FB43A3A8A321834576D0B18FC8E2 /* MBProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -223,10 +286,33 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				770D4B953145D2B92971FB94B75DDFDC /* Pods */,
+				7699B4C91402A655AB7C1BE73A5D5971 /* Pods */,
 				FA0C98B12E43F9874EB76DDF83DAAF4D /* Products */,
 				E2BB62B1EF0408904495AEB435E031AB /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		82D28E78BCD7668EF2DBBB4C79E17D95 /* MBProgressHUD+JDragon */ = {
+			isa = PBXGroup;
+			children = (
+				180D6D6212C34F5466F638119B167FD9 /* MBProgressHUD+JDragon.h */,
+				DB5622DFB55E189A499D807B374F3AC0 /* MBProgressHUD+JDragon.m */,
+				14B91A9B6CE80CAF0C93C93D008683FA /* Resources */,
+				0BA48AC1C89BF69769A32B22BDA6C47C /* Support Files */,
+			);
+			name = "MBProgressHUD+JDragon";
+			path = "MBProgressHUD+JDragon";
+			sourceTree = "<group>";
+		};
+		9F609318C190C46D7AFD6B71386DE657 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC1E201A172C5BEBFE6B5E4D15D7B5A0 /* CGXPickerView.xcconfig */,
+				B91D29A1FBE247B3212576D25E1516F3 /* CGXPickerView-dummy.m */,
+				60202D4837E5EC142655F003895616AF /* CGXPickerView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CGXPickerView";
 			sourceTree = "<group>";
 		};
 		A10F9129DC58F161AEE52B5F9654CCC2 /* Pods-FTCamera */ = {
@@ -244,17 +330,6 @@
 			path = "Target Support Files/Pods-FTCamera";
 			sourceTree = "<group>";
 		};
-		B93C259E641A48B0E8179A7DF5855C2F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F1783680425E1E22AD791BE2CF2702F8 /* MBProgressHUD.xcconfig */,
-				47B544D728F21242C0C19C7676101E14 /* MBProgressHUD-dummy.m */,
-				CDCDB4486BECC7F9FBC0F553590D1EFE /* MBProgressHUD-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/MBProgressHUD";
-			sourceTree = "<group>";
-		};
 		C93AA53D048424A67CC426E3C9422A44 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -264,25 +339,13 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		D8ABC92F5031F2AA9FFCEE0806541707 /* Support Files */ = {
+		D8632A9BE7CF72BA2C3488C96708D74C /* Google-Mobile-Ads-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				9A38BB46013A68D3E8990E93E6C2C355 /* MBProgressHUD+JDragon.xcconfig */,
-				B8484F54E15605D4C8372AFBD83CBD7B /* MBProgressHUD+JDragon-dummy.m */,
-				EC21642FC657EEA97D525118D5CB918C /* MBProgressHUD+JDragon-prefix.pch */,
+				0EB82E50DE8B5E85CFDA087A04ADDD9B /* Frameworks */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MBProgressHUD+JDragon";
-			sourceTree = "<group>";
-		};
-		E0189E5BA1DF4D3C085A25A209B53174 /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				68251E658A33BFC5F0359EA1515A0822 /* MBProgressHUD.h */,
-				00363E26FBB7EBDC694E0E0B143D678B /* MBProgressHUD.m */,
-				B93C259E641A48B0E8179A7DF5855C2F /* Support Files */,
-			);
-			path = MBProgressHUD;
+			name = "Google-Mobile-Ads-SDK";
+			path = "Google-Mobile-Ads-SDK";
 			sourceTree = "<group>";
 		};
 		E2BB62B1EF0408904495AEB435E031AB /* Targets Support Files */ = {
@@ -302,47 +365,6 @@
 				CEB10112820C6D926C9B71DB27F54DB5 /* libPods-FTCamera.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		FB5822407ACB896DA6A42BCBE21BCBBF /* CGXPickerView */ = {
-			isa = PBXGroup;
-			children = (
-				0660061003177B8F6FE22A4C096D742D /* CGXAddressCity.plist */,
-				D360CB5A5E528737F417CE9F3D67C6AA /* CGXAddressModel.h */,
-				CB947A621BE874A6C2CA1B94C464D9FF /* CGXAddressModel.m */,
-				1E82AF0F43DD69C863F4BF75E042E838 /* CGXAddressPcikerView.h */,
-				DD6D5221D3A34A6D15A0959BFC9603B1 /* CGXAddressPcikerView.m */,
-				0AC0716DE57C15A8500E9F1D526CC7A9 /* CGXBasicInfoPicker.plist */,
-				AE1093698703444EF77D679A619110D1 /* CGXDatePickerView.h */,
-				4BADE16538A5D9A4FB0B43BC87A898B3 /* CGXDatePickerView.m */,
-				194D8A33C016AC684DC682C7ABA437A7 /* CGXPickerUIBaseView.h */,
-				B1229654A389DA6592083E3BE9403859 /* CGXPickerUIBaseView.m */,
-				F75DCBDD590FCD28ECD45C97923B866C /* CGXPickerView.h */,
-				5F2DABF63BBEB719E9A3E959D6A5F51E /* CGXPickerView.m */,
-				2A50C9B548EC3FD2D482E083000E3FDD /* CGXPickerViewManager.h */,
-				C1890918DF6DC677DCF58E07736ED874 /* CGXPickerViewManager.m */,
-				8ECA1B0CD44925036E6524EBA453F58B /* CGXStringPickerView.h */,
-				201ED7E659634BDCB4220A86F5505A24 /* CGXStringPickerView.m */,
-				5EC54477183B79F0E3E9915E24AA56A1 /* CodeDirectory */,
-				DDF01DDE0241183C64B359C5A74B0E08 /* CodeRequirements */,
-				8C2AC4FD2E62A95CF1B0B65E96AF9F25 /* CodeRequirements-1 */,
-				51441ED33DE04225B7B89AC1F9834689 /* CodeResources */,
-				6B88C14CF8E6B4567014D271EA2EAA0C /* CodeSignature */,
-				FFBBA13F2AE78BA44A03E66CBD256434 /* Info.plist */,
-				D0AC14C24A5235F43F90973B7F721BFC /* NSDate+CGXPicker.h */,
-				0BD3B66ABF831CE06D6C84BE1726517E /* NSDate+CGXPicker.m */,
-				50C0ADE0CE30F90C404BD8F2CB8229F7 /* Resources */,
-				4D8AB11C3F539396810190304C74BACF /* Support Files */,
-			);
-			path = CGXPickerView;
-			sourceTree = "<group>";
-		};
-		FB8D0559C7B8FECBFA5980ACC1BCC53A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				73BC3452E5FC9544934D420DB799EB55 /* MBProgressHUD+JDragon.bundle */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,15 +482,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = FA0C98B12E43F9874EB76DDF83DAAF4D /* Products */;
@@ -587,14 +608,14 @@
 		};
 		323B2E59E2638DB1996762CD4E6EE318 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DB95C9BCDFE60A2F13317E70590301B /* CGXPickerView.xcconfig */;
+			baseConfigurationReference = DC1E201A172C5BEBFE6B5E4D15D7B5A0 /* CGXPickerView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/CGXPickerView/CGXPickerView-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -608,7 +629,7 @@
 		};
 		48E386E0A1FB0C7DB7DFEA0CEF9FAA3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1783680425E1E22AD791BE2CF2702F8 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = E0385E4172DFAC26329BBD8EB0C0B73D /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -616,7 +637,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -632,7 +653,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -689,14 +709,14 @@
 		};
 		61A4981E770F3712B06B8F1A24281C97 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A38BB46013A68D3E8990E93E6C2C355 /* MBProgressHUD+JDragon.xcconfig */;
+			baseConfigurationReference = 78820DD3529B75C85A04B1210118F070 /* MBProgressHUD+JDragon.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD+JDragon/MBProgressHUD+JDragon-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -710,14 +730,14 @@
 		};
 		750A3D962860C461B9F6B1ED41007B5E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A38BB46013A68D3E8990E93E6C2C355 /* MBProgressHUD+JDragon.xcconfig */;
+			baseConfigurationReference = 78820DD3529B75C85A04B1210118F070 /* MBProgressHUD+JDragon.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD+JDragon/MBProgressHUD+JDragon-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -732,7 +752,7 @@
 		};
 		92A1920F414626ACDFE70DB60A268DB3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1783680425E1E22AD791BE2CF2702F8 /* MBProgressHUD.xcconfig */;
+			baseConfigurationReference = E0385E4172DFAC26329BBD8EB0C0B73D /* MBProgressHUD.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -740,7 +760,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -777,7 +797,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -839,14 +858,14 @@
 		};
 		F1243C4766DB79872D9DEB0FB87E0AB1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DB95C9BCDFE60A2F13317E70590301B /* CGXPickerView.xcconfig */;
+			baseConfigurationReference = DC1E201A172C5BEBFE6B5E4D15D7B5A0 /* CGXPickerView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/CGXPickerView/CGXPickerView-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";

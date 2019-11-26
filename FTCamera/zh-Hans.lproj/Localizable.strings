@@ -24,6 +24,14 @@
 "Share" = "Share";
 "Saved" = "Saved successfully";
 
+"ShouldPay" = "Should Pay";
+"ShouldPayOrSave" = "ShouldPayOrSave";
+"BuyAD" = "BuyAD";
+"Save" = "Save";
+"BuySingle" = "Buy Single";
+"BuyAll" = "Buy All";
+"NoPermission" = "No Permission";
+
 "tabbar1" = "E  D  I  T";
 "tabbar2" = "F  I  L  T  E  R  S";
 "tabbar3" = "T  E  X  T  U  R  E  S";

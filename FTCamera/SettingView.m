@@ -19,13 +19,16 @@
 @implementation SettingView
 
 -(void)layoutSubviews{
+    if (@available(iOS 13.0, *)) {
+        self.overrideUserInterfaceStyle = UIUserInterfaceStyleLight;
+    }
     [self.btn1 setOn:[[SettingModel sharedInstance] isStamp]];
     [self.btn2 setOn:[[SettingModel sharedInstance] isRandom]];
     [self.btn3 setTitle:[[SettingModel sharedInstance] customDate] forState:UIControlStateNormal];
     [self.btn8 setOn:[[SettingModel sharedInstance] isSound]];
     
     for (UIView *view in self.subviews) {
-        if([view isMemberOfClass:[UIScrollView class]]){
+        if ([view isMemberOfClass:[UIScrollView class]]) {
             [(UIScrollView *)view setContentSize:CGSizeMake(0, 565)];
             break;
         }

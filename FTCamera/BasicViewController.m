@@ -9,12 +9,16 @@
 #import "BasicViewController.h"
 #import <MessageUI/MessageUI.h>
 #import <MBProgressHUD+JDragon.h>
+#import <GoogleMobileAds/GoogleMobileAds.h>
 
-@interface BasicViewController () <MFMailComposeViewControllerDelegate>
+@interface BasicViewController () <MFMailComposeViewControllerDelegate,GADInterstitialDelegate>
 
 @end
 
-@implementation BasicViewController
+@implementation BasicViewController{
+    GADInterstitial *_interstitial;
+    NSTimer *_timer;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -120,6 +124,14 @@
     if (self.proManager) {
         self.proManager.delegate = self;
     }
+    if ([ProManager isFullPaid] || [ProManager isProductPaid:AD_PRODUCT_ID]) {
+        if (_timer) {
+            [_timer invalidate];
+            _timer = nil;
+        }
+    }else{
+        [self startAd];
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
@@ -127,16 +139,36 @@
     if (self.proManager) {
         self.proManager.delegate = nil;
     }
+    if (_timer) {
+        [_timer invalidate];
+        _timer = nil;
+    }
 }
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+- (void)startAd{
+    if ([_interstitial isReady] == NO) {
+        _interstitial = [self createAndLoadInterstitial];
+    }
+    
+    _timer = [NSTimer scheduledTimerWithTimeInterval:CameraShowAdTime target:self selector:@selector(showInterstitialAds) userInfo:nil repeats:YES];
+}
+
+- (GADInterstitial *)createAndLoadInterstitial{
+    GADInterstitial *interstitial = [[GADInterstitial alloc] initWithAdUnitID:AD_INTERSTITIAL_ID];
+    interstitial.delegate = self;
+    [interstitial loadRequest:[GADRequest request]];
+    return interstitial;
+}
+
+- (void)interstitialDidDismissScreen:(GADInterstitial *)ad{
+    _interstitial = [self createAndLoadInterstitial];
+}
+
+- (void)showInterstitialAds{
+    NSLog(@"计时器");
+    if ([_interstitial isReady] && [ProManager isProductPaid:AD_PRODUCT_ID] == NO && [ProManager isFullPaid] == NO) {
+        [_interstitial presentFromRootViewController:self];
+    }
+}
 
 @end
