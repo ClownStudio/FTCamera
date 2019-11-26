@@ -27,7 +27,6 @@
 		4212AE74211C14720030193C /* iap_ad_2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4212AE6A211C14710030193C /* iap_ad_2@3x.png */; };
 		4212AE75211C14720030193C /* iap_ad_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4212AE6B211C14710030193C /* iap_ad_3.png */; };
 		4212AE78211D40810030193C /* EffectCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4212AE77211D40810030193C /* EffectCustomButton.m */; };
-		421B99B22124623700654D9C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421B99B12124623700654D9C /* StoreKit.framework */; };
 		421B99B5212474FD00654D9C /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 421B99B3212474FC00654D9C /* UIImage+Rotate.m */; };
 		421B99BB2124852400654D9C /* sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 421B99BA2124852400654D9C /* sound.wav */; };
 		421B99C02125288100654D9C /* GetMoreButtom.xib in Resources */ = {isa = PBXBuildFile; fileRef = 421B99C22125288100654D9C /* GetMoreButtom.xib */; };
@@ -578,6 +577,7 @@
 		42C0CCBE21100086001B801A /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C0CCC021100086001B801A /* SettingView.xib */; };
 		42C0CCD72111851B001B801A /* SettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C0CCD62111851B001B801A /* SettingModel.m */; };
 		9288CC25F15D42D82D1A0B51 /* libPods-FTCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7929CC7C81A20537918E68 /* libPods-FTCamera.a */; };
+		B6599D1A2369702F00EB4FC2 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6599D192369702F00EB4FC2 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -602,7 +602,6 @@
 		4212AE6B211C14710030193C /* iap_ad_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iap_ad_3.png; sourceTree = "<group>"; };
 		4212AE76211D40810030193C /* EffectCustomButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EffectCustomButton.h; sourceTree = "<group>"; };
 		4212AE77211D40810030193C /* EffectCustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EffectCustomButton.m; sourceTree = "<group>"; };
-		421B99B12124623700654D9C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		421B99B3212474FC00654D9C /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
 		421B99B4212474FC00654D9C /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Rotate.h"; sourceTree = "<group>"; };
 		421B99BA2124852400654D9C /* sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound.wav; sourceTree = "<group>"; };
@@ -1510,6 +1509,8 @@
 		42C0CCD62111851B001B801A /* SettingModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingModel.m; sourceTree = "<group>"; };
 		6A7929CC7C81A20537918E68 /* libPods-FTCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FTCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5917FE5A25B874B13FCBA7 /* Pods-FTCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FTCamera/Pods-FTCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		B6599D1723694B2500EB4FC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6599D192369702F00EB4FC2 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C6DDC78E7C97EF4E4CEA2E79 /* Pods-FTCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FTCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-FTCamera/Pods-FTCamera.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1519,7 +1520,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9288CC25F15D42D82D1A0B51 /* libPods-FTCamera.a in Frameworks */,
-				421B99B22124623700654D9C /* StoreKit.framework in Frameworks */,
+				B6599D1A2369702F00EB4FC2 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2830,7 +2831,8 @@
 		EE723A1007258CC7CBE5BB5F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				421B99B12124623700654D9C /* StoreKit.framework */,
+				B6599D192369702F00EB4FC2 /* StoreKit.framework */,
+				B6599D1723694B2500EB4FC2 /* Foundation.framework */,
 				6A7929CC7C81A20537918E68 /* libPods-FTCamera.a */,
 			);
 			name = Frameworks;
@@ -3729,8 +3731,9 @@
 			baseConfigurationReference = 7C5917FE5A25B874B13FCBA7 /* Pods-FTCamera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = FM78YDS6QA;
+				DEVELOPMENT_TEAM = D38C434CHM;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FTCamera/Librarys/PhotoCollage/Prefix.h";
 				INFOPLIST_FILE = FTCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3739,8 +3742,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstudio.X2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "de9bcb5c-3f63-4cc5-a5eb-b04573a33f06";
-				PROVISIONING_PROFILE_SPECIFIER = X2test;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = YinYinPingTai;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -3750,8 +3753,9 @@
 			baseConfigurationReference = C6DDC78E7C97EF4E4CEA2E79 /* Pods-FTCamera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = FM78YDS6QA;
+				DEVELOPMENT_TEAM = D38C434CHM;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/FTCamera/Librarys/PhotoCollage/Prefix.h";
 				INFOPLIST_FILE = FTCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3760,8 +3764,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.appstudio.X2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "de9bcb5c-3f63-4cc5-a5eb-b04573a33f06";
-				PROVISIONING_PROFILE_SPECIFIER = X2test;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = YinYinPingTai;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

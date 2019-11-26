@@ -24,9 +24,11 @@
     [self.btn3 setTitle:[[SettingModel sharedInstance] customDate] forState:UIControlStateNormal];
     [self.btn8 setOn:[[SettingModel sharedInstance] isSound]];
     
-    UIScrollView *scrollView = [self.subviews firstObject];
-    if(scrollView){
-        [scrollView setContentSize:CGSizeMake(0, 565)];
+    for (UIView *view in self.subviews) {
+        if([view isMemberOfClass:[UIScrollView class]]){
+            [(UIScrollView *)view setContentSize:CGSizeMake(0, 565)];
+            break;
+        }
     }
 }
 
@@ -35,18 +37,15 @@
 }
 
 - (IBAction)onAddStamp:(id)sender{
-    [self.btn1 setOn:!self.btn1.isOn];
-    [[SettingModel sharedInstance] setIsStamp:self.btn1.isOn];
+    [[SettingModel sharedInstance] setIsStamp:![[SettingModel sharedInstance] isStamp]];
 }
 
 - (IBAction)onRadom:(id)sender{
-    [self.btn2 setOn:!self.btn2.isOn];
-    [[SettingModel sharedInstance] setIsRandom:self.btn2.isOn];
+    [[SettingModel sharedInstance] setIsRandom:![[SettingModel sharedInstance] isRandom]];
 }
 
 - (IBAction)onSound:(id)sender{
-    [self.btn8 setOn:!self.btn8.isOn];
-    [[SettingModel sharedInstance] setIsSound:self.btn8.isOn];
+    [[SettingModel sharedInstance] setIsSound:![[SettingModel sharedInstance] isSound]];
 }
 
 - (IBAction)onCustomDate:(id)sender{

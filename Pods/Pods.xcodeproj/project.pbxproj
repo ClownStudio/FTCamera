@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -82,7 +82,7 @@
 		0660061003177B8F6FE22A4C096D742D /* CGXAddressCity.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = CGXAddressCity.plist; path = CGXPickerView/CGXPickerView.bundle/Contents/Resources/CGXAddressCity.plist; sourceTree = "<group>"; };
 		0AC0716DE57C15A8500E9F1D526CC7A9 /* CGXBasicInfoPicker.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = CGXBasicInfoPicker.plist; path = CGXPickerView/CGXPickerView.bundle/Contents/Resources/CGXBasicInfoPicker.plist; sourceTree = "<group>"; };
 		0BD3B66ABF831CE06D6C84BE1726517E /* NSDate+CGXPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+CGXPicker.m"; path = "CGXPickerView/NSDate+CGXPicker.m"; sourceTree = "<group>"; };
-		14C74E6110C5CD84B14B52E9166D41A3 /* libCGXPickerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCGXPickerView.a; path = libCGXPickerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C74E6110C5CD84B14B52E9166D41A3 /* libCGXPickerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCGXPickerView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		194D8A33C016AC684DC682C7ABA437A7 /* CGXPickerUIBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXPickerUIBaseView.h; path = CGXPickerView/CGXPickerUIBaseView.h; sourceTree = "<group>"; };
 		1E82AF0F43DD69C863F4BF75E042E838 /* CGXAddressPcikerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXAddressPcikerView.h; path = CGXPickerView/CGXAddressPcikerView.h; sourceTree = "<group>"; };
 		201ED7E659634BDCB4220A86F5505A24 /* CGXStringPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXStringPickerView.m; path = CGXPickerView/CGXStringPickerView.m; sourceTree = "<group>"; };
@@ -91,23 +91,23 @@
 		2DB95C9BCDFE60A2F13317E70590301B /* CGXPickerView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CGXPickerView.xcconfig; sourceTree = "<group>"; };
 		47B544D728F21242C0C19C7676101E14 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		4BADE16538A5D9A4FB0B43BC87A898B3 /* CGXDatePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXDatePickerView.m; path = CGXPickerView/CGXDatePickerView.m; sourceTree = "<group>"; };
-		51441ED33DE04225B7B89AC1F9834689 /* CodeResources */ = {isa = PBXFileReference; includeInIndex = 1; name = CodeResources; path = CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeResources; sourceTree = "<group>"; };
+		51441ED33DE04225B7B89AC1F9834689 /* CodeResources */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = CodeResources; path = CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeResources; sourceTree = "<group>"; };
 		56F2752E217674301B505D8949BDDA7C /* Pods-FTCamera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FTCamera-dummy.m"; sourceTree = "<group>"; };
 		5914E3EAEC626C062B46817E505991AA /* CGXPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CGXPickerView-prefix.pch"; sourceTree = "<group>"; };
 		5A9C30E9C3398A05600191ECC78DBABB /* CGXPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CGXPickerView-dummy.m"; sourceTree = "<group>"; };
-		5EC54477183B79F0E3E9915E24AA56A1 /* CodeDirectory */ = {isa = PBXFileReference; includeInIndex = 1; name = CodeDirectory; path = CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeDirectory; sourceTree = "<group>"; };
+		5EC54477183B79F0E3E9915E24AA56A1 /* CodeDirectory */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = CodeDirectory; path = CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeDirectory; sourceTree = "<group>"; };
 		5F2DABF63BBEB719E9A3E959D6A5F51E /* CGXPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXPickerView.m; path = CGXPickerView/CGXPickerView.m; sourceTree = "<group>"; };
 		68251E658A33BFC5F0359EA1515A0822 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		6B88C14CF8E6B4567014D271EA2EAA0C /* CodeSignature */ = {isa = PBXFileReference; includeInIndex = 1; name = CodeSignature; path = CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeSignature; sourceTree = "<group>"; };
+		6B88C14CF8E6B4567014D271EA2EAA0C /* CodeSignature */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = CodeSignature; path = CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeSignature; sourceTree = "<group>"; };
 		72DDC98D20BAAAA8F2AC8C8317003558 /* Pods-FTCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTCamera.debug.xcconfig"; sourceTree = "<group>"; };
 		73BC3452E5FC9544934D420DB799EB55 /* MBProgressHUD+JDragon.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = "MBProgressHUD+JDragon.bundle"; path = "MBProgressHUD+JDragon/MBProgressHUD+JDragon.bundle"; sourceTree = "<group>"; };
-		77DF18ACD57992AD9865AFA7592DAE0C /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMBProgressHUD.a; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		77DF18ACD57992AD9865AFA7592DAE0C /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8621F66D446C6F4AC0D7F817144EB150 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		89744A045C087F2B4C829DE4AB562AFB /* Pods-FTCamera-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FTCamera-acknowledgements.plist"; sourceTree = "<group>"; };
 		8B8C2A9CB799BA385E3877EBA69C0F71 /* Pods-FTCamera-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FTCamera-frameworks.sh"; sourceTree = "<group>"; };
-		8C2AC4FD2E62A95CF1B0B65E96AF9F25 /* CodeRequirements-1 */ = {isa = PBXFileReference; includeInIndex = 1; name = "CodeRequirements-1"; path = "CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeRequirements-1"; sourceTree = "<group>"; };
+		8C2AC4FD2E62A95CF1B0B65E96AF9F25 /* CodeRequirements-1 */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = "CodeRequirements-1"; path = "CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeRequirements-1"; sourceTree = "<group>"; };
 		8ECA1B0CD44925036E6524EBA453F58B /* CGXStringPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXStringPickerView.h; path = CGXPickerView/CGXStringPickerView.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94D06488626A127C1D63B2EAB1A6344D /* MBProgressHUD+JDragon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MBProgressHUD+JDragon.m"; path = "MBProgressHUD+JDragon/MBProgressHUD+JDragon.m"; sourceTree = "<group>"; };
 		9A38BB46013A68D3E8990E93E6C2C355 /* MBProgressHUD+JDragon.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MBProgressHUD+JDragon.xcconfig"; sourceTree = "<group>"; };
 		A5054FCBDC28C6842C93FB11BA85A6B8 /* Pods-FTCamera-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FTCamera-resources.sh"; sourceTree = "<group>"; };
@@ -119,15 +119,15 @@
 		C1890918DF6DC677DCF58E07736ED874 /* CGXPickerViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXPickerViewManager.m; path = CGXPickerView/CGXPickerViewManager.m; sourceTree = "<group>"; };
 		CB947A621BE874A6C2CA1B94C464D9FF /* CGXAddressModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXAddressModel.m; path = CGXPickerView/CGXAddressModel.m; sourceTree = "<group>"; };
 		CDCDB4486BECC7F9FBC0F553590D1EFE /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		CEB10112820C6D926C9B71DB27F54DB5 /* libPods-FTCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FTCamera.a"; path = "libPods-FTCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB10112820C6D926C9B71DB27F54DB5 /* libPods-FTCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FTCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AC14C24A5235F43F90973B7F721BFC /* NSDate+CGXPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+CGXPicker.h"; path = "CGXPickerView/NSDate+CGXPicker.h"; sourceTree = "<group>"; };
 		D360CB5A5E528737F417CE9F3D67C6AA /* CGXAddressModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXAddressModel.h; path = CGXPickerView/CGXAddressModel.h; sourceTree = "<group>"; };
 		DC941E7F78FD4FDA9E657D553C0CADEC /* Pods-FTCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FTCamera.release.xcconfig"; sourceTree = "<group>"; };
 		DD6D5221D3A34A6D15A0959BFC9603B1 /* CGXAddressPcikerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CGXAddressPcikerView.m; path = CGXPickerView/CGXAddressPcikerView.m; sourceTree = "<group>"; };
-		DDF01DDE0241183C64B359C5A74B0E08 /* CodeRequirements */ = {isa = PBXFileReference; includeInIndex = 1; name = CodeRequirements; path = CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeRequirements; sourceTree = "<group>"; };
+		DDF01DDE0241183C64B359C5A74B0E08 /* CodeRequirements */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = CodeRequirements; path = CGXPickerView/CGXPickerView.bundle/Contents/_CodeSignature/CodeRequirements; sourceTree = "<group>"; };
 		EC21642FC657EEA97D525118D5CB918C /* MBProgressHUD+JDragon-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+JDragon-prefix.pch"; sourceTree = "<group>"; };
 		F1783680425E1E22AD791BE2CF2702F8 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
-		F27E2D3FEAE3E58A3F1A5C2EA17DF5BB /* libMBProgressHUD+JDragon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libMBProgressHUD+JDragon.a"; path = "libMBProgressHUD+JDragon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F27E2D3FEAE3E58A3F1A5C2EA17DF5BB /* libMBProgressHUD+JDragon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libMBProgressHUD+JDragon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F75DCBDD590FCD28ECD45C97923B866C /* CGXPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CGXPickerView.h; path = CGXPickerView/CGXPickerView.h; sourceTree = "<group>"; };
 		F802278886686AA52DD13DDFD4E88325 /* Pods-FTCamera-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FTCamera-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FFBBA13F2AE78BA44A03E66CBD256434 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = CGXPickerView/CGXPickerView.bundle/Contents/Info.plist; sourceTree = "<group>"; };
@@ -178,7 +178,6 @@
 				FB8D0559C7B8FECBFA5980ACC1BCC53A /* Resources */,
 				D8ABC92F5031F2AA9FFCEE0806541707 /* Support Files */,
 			);
-			name = "MBProgressHUD+JDragon";
 			path = "MBProgressHUD+JDragon";
 			sourceTree = "<group>";
 		};
@@ -283,7 +282,6 @@
 				00363E26FBB7EBDC694E0E0B143D678B /* MBProgressHUD.m */,
 				B93C259E641A48B0E8179A7DF5855C2F /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -336,7 +334,6 @@
 				50C0ADE0CE30F90C404BD8F2CB8229F7 /* Resources */,
 				4D8AB11C3F539396810190304C74BACF /* Support Files */,
 			);
-			name = CGXPickerView;
 			path = CGXPickerView;
 			sourceTree = "<group>";
 		};
@@ -463,14 +460,15 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = FA0C98B12E43F9874EB76DDF83DAAF4D /* Products */;
@@ -596,7 +594,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/CGXPickerView/CGXPickerView-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -618,7 +616,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -634,6 +632,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -697,7 +696,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD+JDragon/MBProgressHUD+JDragon-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -718,7 +717,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD+JDragon/MBProgressHUD+JDragon-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -741,7 +740,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -778,6 +777,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -846,7 +846,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/CGXPickerView/CGXPickerView-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
